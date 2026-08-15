@@ -1,0 +1,22 @@
+/*
+
+15. String Reversal 
+• Objective: Manipulate strings. 
+• Task: Reverse a string entered by the user. 
+• Instructions: 
+o Prompt the user for a string. 
+o Use a loop or StringBuilder to reverse the string. 
+o Display the reversed string.
+
+
+*/
+
+
+package CoreJava;
+
+public class File15StringBuilder {
+    public static void main(String[] args) {
+        
+    }
+
+}
