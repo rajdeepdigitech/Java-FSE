@@ -13,28 +13,34 @@ o Display the result.
 
 package CoreJava;
 
-import java.lang.IO;
 import java.util.Scanner;
+import java.lang.IO;
 
 public class File13RecursionFibo {
 
-    static int incursion(int n) {
-        if (n == 1) {
+    static int fibonacci(int n) {
+        if (n <= 0) {
+            return 0;
+        } else if (n == 1) {
             return 1;
         }
-        return n * incursion(n - 1);
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    
     }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        IO.println("Please enter any number!");
+        IO.println("Please enter a positive integer n:");
         int userInput = input.nextInt();
-        int result = incursion(userInput);
 
-        IO.println(result);
+        if (userInput < 0) {
+            IO.println("Please enter a non-negative integer!");
+        } else {
+            int result = fibonacci(userInput);
+            IO.println("The Fibonacci number at position " + userInput + " is: " + result);
+        }
 
         input.close();
     }
-
-    
 }
