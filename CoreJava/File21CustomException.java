@@ -9,21 +9,27 @@ o Catch the exception and display a message.
 
 */
 
+// Need to study this again!
+
 package CoreJava;
 
-import java.lang.IO;
-import java.lang.ArithmeticException;
-
 public class File21CustomException {
-    public static void main(String[] args) {
-        var age = 17;
-
-        if (age < 18) {
-            throw new ArithmeticException("You must be atleast 18 years old!");
-
+    static class InvalidAgeException extends Exception {
+        public InvalidAgeException(String message) {
+            super(message);
         }
-        else {
-            IO.println("You are old enough!");
+    }
+
+    public static void main(String[] args) {
+        int age = 17;
+
+        try {
+            if (age < 18) {
+                throw new InvalidAgeException("You must be at least 18 years old!");
+            }
+            System.out.println("You are old enough!");
+        } catch (InvalidAgeException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
