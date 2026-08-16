@@ -42,8 +42,6 @@ public class File25hashMap {
 
         IO.println(myHashMap.get(myKey));
 
-
-
         input.close();
 
     }
