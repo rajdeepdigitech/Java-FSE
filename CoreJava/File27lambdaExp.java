@@ -16,6 +16,7 @@ o Display the sorted list.
         return result;
     } 
 
+    Need to look up on lambda function as well
 
 */
 
@@ -23,6 +24,7 @@ package CoreJava;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
+import java.util.Collections;
 
 public class File27lambdaExp {
     public static void main(String[] args) {
@@ -31,7 +33,11 @@ public class File27lambdaExp {
         numbers.add(6);
         numbers.add(7);
         numbers.add(8);
-        numbers.add(9);
+        numbers.add(5);
+
+
+        // Sort the list using lambda
+        Collections.sort(numbers, (n1, n2) -> n1 - n2);
 
 
         // Built-in functional interfaces
