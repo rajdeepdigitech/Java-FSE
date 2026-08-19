@@ -1,9 +1,17 @@
 package CoreJava;
 
 import java.lang.IO;
+import java.util.*;
 
 public class Extra01Ternary {
     public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        IO.println("Enter your age: ->");
+
+        int myAge = input.nextInt();
+
         int myNumber = 4;
         
 
@@ -15,8 +23,12 @@ public class Extra01Ternary {
         // }
 
         // Ternary Operator 
-        int myResult = myNumber % 2 == 0 ? 10 : 20;
+        // int myResult = myNumber % 2 == 0 ? 10 : 20;
 
-        IO.println(myResult);
+        boolean myResult = myAge % 2 == 0 ? true : false;
+
+   
+
+        input.close();
     }
 }
