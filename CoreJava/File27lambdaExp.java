@@ -35,10 +35,27 @@ public class File27lambdaExp {
         numbers.add(8);
         numbers.add(5);
 
-
         // Sort the list using lambda
+        // Collections.sort(List<T> list, Comparator<? super T> c) is a static method
+        // that rearranges the elements of the list in ascending order according to the
+        // comparator provided as the second argument.
+        //
+        // Here, the lambda expression:
+        //     (n1, n2) -> n1 - n2
+        // is treated as the Comparator<Integer> implementation.
+        //
+        // In Java, a Comparator compares two elements and returns:
+        //     negative value  -> n1 should come before n2
+        //     zero            -> both elements are considered equal
+        //     positive value  -> n1 should come after n2
+        //
+        // For example:
+        //     if n1 = 5 and n2 = 7, then 5 - 7 = -2, so 5 is placed before 7.
+        //     if n1 = 8 and n2 = 5, then 8 - 5 = 3, so 8 is placed after 5.
+        //
+        // The sort() method internally calls this lambda repeatedly during sorting,
+        // comparing pairs of elements until the entire list is ordered correctly.
         Collections.sort(numbers, (n1, n2) -> n1 - n2);
-
 
         // Built-in functional interfaces
         Consumer<Integer> method = (n) -> {IO.println(n);};
