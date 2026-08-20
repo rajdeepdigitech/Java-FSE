@@ -9,7 +9,17 @@ public class Extra03If_else {
 
         Scanner input = new Scanner(System.in);
 
-        IO.println("Hello world!");
+        int myAge = input.nextInt();
+
+        if (myAge > 18) {
+            IO.println("You are eligible!");
+        }
+        else if (myAge < 18) {
+            IO.println("You are not eligible!");
+        }
+        else {
+            IO.println("Please enter a number!");
+        }
 
         input.close();
     }   
