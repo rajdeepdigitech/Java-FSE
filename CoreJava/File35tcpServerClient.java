@@ -4,8 +4,7 @@
 • Task: Implement a simple TCP chat system. 
 • Instructions: 
 o Create a ServerSocket that listens for connections. 
-o Accept client connections and use InputStream and OutputStream for two-way 
-communication. 
+o Accept client connections and use InputStream and OutputStream for two-way communication. 
 o Run server and client in different terminals. 
 
 */
