@@ -12,8 +12,6 @@ public class Extra03If_else {
         IO.println("Hello world!");
 
         input.close();
-
-    }
-    
+    }   
 }
 
