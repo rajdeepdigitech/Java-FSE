@@ -41,6 +41,12 @@ public class Main {
 
         boolean y = x >= -5 && x <= 5 ? true : false;
         IO.println(y) ;
+        String myName = "Pushpal";
+
+        char[] arr = myName.toCharArray();
+        for (char a : arr) {
+            IO.print(a + " ");
+        }
 
         input.close();
         
