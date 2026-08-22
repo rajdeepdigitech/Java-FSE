@@ -38,7 +38,7 @@ s consist of only digits and English letters.
  */
 
 
-package DSA.Palindrome;
+package DSA.Palindrome.bruteNaive;
 
 class Solution {
     private boolean isPalindrome(String s, int left, int right) {
@@ -71,7 +71,7 @@ class Solution {
 }
 
 
-public class File02palindrome {
+public class bruteNaive {
     public static void main(String[] args) {
         
 
