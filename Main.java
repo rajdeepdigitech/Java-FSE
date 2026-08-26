@@ -1,26 +1,66 @@
-import java.util.Scanner;
+import java.lang.IO;
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
 
-import javax.print.attribute.IntegerSyntax;
+        
+        
+        // strs -> An array of strings 
+        
+        int n = strs.length;
+        String minString = "";
+        String outPut = "";
+        int minStringLength = Integer.MAX_VALUE;
+        StringBuilder result;
+
+        for (int i = 0; i < n; i++) {
+            if (strs[i].length() < minStringLength) {
+                minStringLength = strs[i].length();
+                minString = strs[i];
+                // Gives us the minimum length of the shortest string
+                // & the shortest string 
+            }
+        }
+
+        if (minStringLength == 0) {
+            return "";
+        }
+        else {
+        result = new StringBuilder(minString);
+
+        
+        for (int i = 0; i < n; i++) {
+            if (minString.charAt(0) != strs[i].charAt(0)) {
+            return "";
+            } else {
+            for (int j = 0; j < minStringLength; j++) {
+                char c = strs[i].charAt(j);
+                if (c != minString.charAt(j)) {
+                    result.delete(j, Integer.MAX_VALUE);
+                    break;
+                }
+                
+            }
+        }
+            outPut = result.toString();
+            
+        }
+
+        
+        
+
+        return outPut;
+    }
+}}
+
 
 public class Main {
     public static void main(String[] args) {
+          
+        Solution sol = new Solution();
+        String arr[] = {"flower", "flow", "flight"};
+        IO.println(sol.longestCommonPrefix(arr));
+       
+        
 
-        Scanner input = new Scanner(System.in);
-        IO.println("Enter your name! -> ");
-
-        String myName = input.nextLine();
-
-        IO.println("Your name is: -> " + myName);
-
-        IO.println("Enter your age ->");
-
-        int myAge = input.nextInt();
-
-        IO.println("Your age is: -> " + myAge);
-
-        Integer x = 100;
-        IO.println(x.size);
-
-        input.close();
     }
 }
