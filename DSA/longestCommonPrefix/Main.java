@@ -1,3 +1,4 @@
+package DSA.longestCommonPrefix;
 import java.lang.IO;
 class Solution {
     public String longestCommonPrefix(String[] strs) {
