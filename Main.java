@@ -7,8 +7,7 @@ public class Main {
         int numberTwo = 9;
         int numberThree = 10;
 
-
-    
+  
 
         // int result = Math.max(numberOne, numberTwo);
         // result = Math.max(numberThree, result);
@@ -22,6 +21,7 @@ public class Main {
          * else {}
          */
 
+        
         if (numberOne > numberTwo) {
             if (numberOne > numberThree) {
                 IO.println(numberOne);
