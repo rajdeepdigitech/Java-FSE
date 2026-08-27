@@ -21,11 +21,32 @@ class Solution {
      */
     public int[] closestPair(int[] arr, int k) {
         // TODO: implement
+        int lowSum = Integer.MIN_VALUE;
+        int highSum = Integer.MAX_VALUE;
+        int output;
+        int newarr[] = new int[2];
+        for (int i = 0; i < arr.length; i++){
+            for (int j = 0; j < arr.length; j++) {
+                if(i == j) {
+                    continue;
+                } else {
+                    if ((arr[i] + arr[j]) < k) {
+                        if((arr[i] + arr[j]) > lowSum) {lowSum = i + j; output = lowSum; newarr[i] = arr[i]; newarr[j] = arr[j];}
 
-        
+                    }
+                    else if ((i + j) > k) {
+                        if ((i + j) < highSum) {
+                            highSum = i + j; output = highSum;
+                            newarr[i] = arr[i]; newarr[j] = arr[j];
+                        }
+
+                    }
+                }
+            }
+        }
 
 
-        return new int[0];
+        return newarr;
     }
 }
 
