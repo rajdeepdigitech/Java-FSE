@@ -1,40 +1,40 @@
 public class Main {
-    public static void main(String[] args) {
-
-        // char, boolean, double, String, float, int 
-
-        int numberOne = 8;
-        int numberTwo = 9;
-        int numberThree = 10;
-
-  
-
-        // int result = Math.max(numberOne, numberTwo);
-        // result = Math.max(numberThree, result);
-
-        // IO.println(result);
-
-        /**
-         * 
-         * if (condition) {}
-         * else if (condition) {}
-         * else {}
-         */
-
-        
-        if (numberOne > numberTwo) {
-            if (numberOne > numberThree) {
-                IO.println(numberOne);
-            }
-        }
-        else if (numberTwo > numberThree) {
-            if (numberTwo > numberOne) {
-                IO.println(numberTwo);
-            }
-        }
-        else {
-            IO.println(numberThree);
-        }
-
-    }    
+	public static void main(String[] args) {
+		int year = 2023;
+		
+		if (year % 4 == 0) {
+			IO.println("LEAP YEAR!");
+		}
+		else if (year % 100 != 0) {
+			if (year % 400 == 0) {
+				IO.println("LEAP YEAR");
+			}
+			else {IO.println("NOT LEAP YEAR");}
+		}
+		else {IO.println("NOT LEAP YEAR");}
+	}
 }
+
+
+
+
+
+
+/**
+class Main {
+	public static void main (String[]args) {
+		int year =2023;
+		if (year % == 4) {
+			IO.println("this is a leap year");
+			if (year % = !100){
+				if (year % == 400){
+					
+					else("this not");
+					
+				else ("this not");
+				
+			else ("this is not") {
+			}
+		}
+	}
+*/
