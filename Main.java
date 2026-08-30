@@ -1,92 +1,84 @@
-import java.util.*;
-
-
-class Azar {
-
-	// ATTRIBUTES
-
-	Azar() {
-		IO.println("The constructor was called!");
-	}
-	Azar(int x, int y) {
-		IO.println("The second constructor was called");
-		IO.println("The values are: " + x + " " + y);
-
-	}
-	Azar(boolean x) {
-		IO.println("The third constructor was called!");
-		this(5, 6);
-	}
-
-	String name = "Azar";
-	int age = 22;
-	double gpa = 6.4;
-	char grade = 'A';
-	boolean isFeesPaid = false;
-
-	// METHOD | FUNCTION
-
-	void getDetails() {
-		IO.println("Name: " + name);
-		IO.println("Age: " + age);
-		IO.println("GPA: " + gpa);
-		IO.println("Grade: " + grade);
-	}
-
-	boolean setPaymentDetails(boolean x) {
-		IO.println("The third constructor was called!");
-		this.isFeesPaid = x;
-		return isFeesPaid;
-	}
-}
+/**
+ * public class <class_name> {
+ * 
+ * }
+ * 
+ */
 
 public class Main {
-
+	
 	public static void main(String[] args) {
 
-		List<String> myList = new ArrayList<String>();
-		Set<String> mySet = new HashSet<String>();
-		Map<String, String> myMap = new HashMap<String, String>();
+		String x = "";
+		int y = 0;
+		float z = 0;
+		double a = 0;
+		char A = '\0';
+		boolean b = true;
 
-		Azar objectOne = new Azar();
-		Azar objectTwo = new Azar(4,6);
-		Azar objectThree = new Azar(true);
-		// Create a new instance of the class Azar 
+		// Operators 
 
-		// object.getDetails();
-		// IO.println("Payment details: " + object.setPaymentDetails(true));
+		x + y;
+		y - z;
+		d / a;
+		d * a;
+		d % a; // Remainder 
+		x++;
+		y--;
+		++x;
+		--y;
 
-		myList.add("Azar");
-		myList.add("Rahul");
-		myList.add("Pushpal");
+		x = ++y; // Preincrement
+		x = y++; // Post increment
 
-		mySet.add("Pushpal");
-		mySet.add("Rahul");
-		mySet.add("Pushpal");
+		// Ternary operator 
 
-		myMap.put("01", "Pushpal");
-		myMap.put("02", "Pushpal");
-		myMap.put("03", "Pushpal");
+		(condition) ? true:false;
+
+		boolean isTrue = a < b ? true:false;
+
+		// control flow architecture 
+
+		if (condition) {
+
+		} 
+		else if (condition) {
+
+		}
+		else {
+
+		}
+
+		switch (case) {
+			case 1:
+				IO.println("...........");
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			default:
+				break;
+		}
+
+		// Loops 
+
+		for (condition1; condition2; condition3) {
+
+		}
+		while (condition) {
+
+		}
+		do { 
+			// Executed first 
+		} while (condition)
 
 
-		IO.println(myList);
-		IO.println(mySet);
-		IO.println(myMap);
+		// OOPS 
+
+		Main obj = new Main();
+
+
 	}
+
 }
-
-
-// JAVA, PYTHON, TYPESCRIPT -> CORE LANGUAGES 
-// DSA -> LEETCODE , striver a2z
-// SPRING BOOT, DJANGO/FLASK/FASTAPI, REACT/NEXTJS/NODEJS
-
-// REACT-NATIVE/JAVA APPLICATION
-
-// MYSQL,MONGODB, FIREBASE
-
-
-
-
-
-
-
