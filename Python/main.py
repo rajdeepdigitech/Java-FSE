@@ -44,3 +44,14 @@ price*tax
 myString = 'Single quotations being used by Python string'
 myString = "Double quotations being used by Python string"
 
+# mylist = [1,2,3,4,5,6]
+# # print(len(mylist))
+
+# for ab in mylist:
+#     print(ab)
+length = 5
+for x in range(0, length):
+    for y in range(x+1, length):
+        print(x, y)
+
+

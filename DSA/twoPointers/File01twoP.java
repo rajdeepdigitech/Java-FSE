@@ -41,7 +41,7 @@ class twoPointers {
                 int sumOfElements = arr[i] + arr[j];
                 if (i <= j) {
                     if (sumOfElements == Sum) {
-                    frequency++;
+                        frequency++;
                     }
                 }
                 
