@@ -15,4 +15,10 @@ fn main() {
     // Right justifying texts 
 
     println!("{number:>5}", number=3);
+    println!("{number:#>5}", number=4);
+
+    // Left adjust by flipping the sign 
+
+    println!("{number:0<5}", number=1);
+
 }
