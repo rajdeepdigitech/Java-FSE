@@ -1,0 +1,27 @@
+## Some information of tags of HTML 
+
+<h1> Heading tags </h1>
+<h1> -> <h6>
+
+<p> Paragraph tags </p>
+
+<em> Somehow made the text italic?? </em>
+
+<p><strong> Strong element is written inside the p element </strong></p>
+
+<br /> -> Inserts a line break into a line of text
+<hr /> -> Starts a new line and pushes the new element after the new line 
+
+
+## Attributes 
+
+<p class="editor-note"> My cat is very grumpy </p>
+
+## Some elements can take several attributes for ex img
+
+<img src="https://something.something" alt="Alternate text if the image doesnt load" width="" height="">
+
+## Boolean attributes 
+
+<label for="first-input">
+
