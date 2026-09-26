@@ -21,12 +21,11 @@ def bubbleSort(arr):
         if not swapped:
             break 
             # Removes unnecessary iterations when array is sorted
-                
+              
     return arr
 
 # Time complexity : O(n^2)
-        
-
+       
 arr = [8, 6, 15, 17, 3, 1, 0, 0, 7, 9]
 sorted_arr = bubbleSort(arr)
 print(sorted_arr)
