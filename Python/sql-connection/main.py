@@ -14,6 +14,3 @@ print(mydb)
 # editor = mydb.cursor()
 # editor.execute("SELECT CURDATE()")
 # print(editor.fetchone())
-
-
-
